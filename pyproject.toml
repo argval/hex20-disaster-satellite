@@ -1,0 +1,55 @@
+[project]
+name = "hex20-disaster-satellite"
+version = "0.1.0"
+description = "This project is a part of HEX20 where we are basically building capabilities to process satellite images to detect natural and manmade disasters"
+readme = "README.md"
+requires-python = ">=3.13.3"
+dependencies = [
+    # geospatial core
+    "gdal>=3.6",
+    "rasterio",
+    "geopandas",
+    "shapely",
+    "pyproj",
+    # big-data helpers
+    "dask[complete]",
+    # ML / DL
+    "torch>=2.2.0",
+    "torchvision",
+    "segmentation-models-pytorch",
+    "albumentations",
+    "onnx",
+    "onnxruntime",
+    "optuna",
+    "wandb",
+    # web / deployment
+    "fastapi",
+    "uvicorn[standard]",
+    "marimo>=0.13.11",
+    "earthengine-api>=1.5.15",
+    "zarr>=3.0.8",
+    "earthdata>=0.4.2",
+    "ipykernel>=6.29.5",
+    "gcsfs>=2025.5.1",
+    "xarray>=2025.4.0",
+    "narwhals>=1.42.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+    "pre-commit",
+    "pytest",
+]
+
+[tool.uv]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+select = ["E", "F", "I"]  # basic flake8, pyflakes, isort rules

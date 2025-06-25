@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Data files - raw and processed
+data/raw/
+data/processed/
+data/external/
+*.tif
+*.tiff
+*.geotiff
+*.pth
+*.pkl
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.csv
+*.parquet
+*.feather
+
+# Model checkpoints and outputs
+checkpoints/
+outputs/
+logs/
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Local development
+.local/
+.cache/
+
+# Project specific
+best_model.pth
+*.pth.tar
