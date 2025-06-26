@@ -1,6 +1,10 @@
-# **Project Status Report: U-Net for Wildfire Burn Area Segmentation**
+# **Wildfire Burn Area Segmentation using U-Net**
 
-This report details the architecture, data pipeline, and training process of the current wildfire detection system. The project's objective is to automatically identify and segment wildfire burn areas from Sentinel-2 satellite imagery using a U-Net deep learning model.
+This project utilizes a U-Net deep learning model to automatically identify and segment wildfire burn areas from Sentinel-2 satellite imagery. The goal is to provide a reliable and efficient method for detecting and monitoring wildfires, ultimately aiding in disaster response and management.
+
+The project encompasses a complete end-to-end workflow, including data ingestion and preprocessing, patch generation, data loading, model training, and evaluation. The U-Net model is trained on a dataset of satellite images and corresponding burn masks, with a focus on achieving high accuracy in segmenting burn areas.
+
+This repository provides a well-structured and maintainable codebase, following best practices for deep learning projects. It serves as a starting point for new contributors and users, offering a clear overview of the project's objectives, methodology, and current status.
 
 ---
 
